@@ -18,8 +18,7 @@ export const Solutions = () => {
             </h2>
           </div>
           <p>
-            Dari satu mesin pengisian hingga destinasi dengan café dan lounge.
-            Temukan pendekatan yang sesuai dengan kebutuhan lokasi Anda.
+            Dari satu mesin pengisian hingga social hub dengan café dan lounge. Temukan pendekatan yang sesuai dengan kebutuhan lokasi Anda.
           </p>
         </div>
         <div className="solutions-grid">
@@ -93,7 +92,7 @@ export const Solutions = () => {
                 >
                   <path d="M20 6 9 17l-5-5"></path>
                 </svg>
-                Acuan mesin fast charging 120 kW
+                Acuan mesin fast charging ≥ 120kW
               </li>
               <li>
                 <svg
@@ -152,9 +151,9 @@ export const Solutions = () => {
             </p>
             <div className="solution-spec">
               <strong>
-                ±900<small>m²</small>
+                ±300<small>m²</small>
               </strong>
-              <span>Min. 6 mesin · 12 nozzle</span>
+              <span>Min. 5 mesin · 10 nozzle</span>
             </div>
             <ul>
               <li>
@@ -191,7 +190,7 @@ export const Solutions = () => {
                 >
                   <path d="M20 6 9 17l-5-5"></path>
                 </svg>
-                Skema mencantumkan mesin PSO 22 kW
+                Skema mencantumkan mesin PSO 22 kW · 1 nozzle
               </li>
               <li>
                 <svg
@@ -244,14 +243,13 @@ export const Solutions = () => {
             <p className="card-eyebrow">CHARGING + CAFÉ / LOUNGE</p>
             <h3>SPKLU Signature</h3>
             <p className="solution-intro">
-              Konsep pengisian kendaraan yang terintegrasi dengan fasilitas
-              untuk pengunjung.
+              Konsep stasiun pengisian kendaraan yang terintegrasi dengan fasilitas untuk pengunjung.
             </p>
             <div className="solution-spec">
               <strong>
-                Café<small>+ lounge</small>
+                ±900<small>m²</small>
               </strong>
-              <span>Charging station berkanopi</span>
+              <span>Min. 6 mesin · 12 nozzle</span>
             </div>
             <ul>
               <li>
@@ -270,7 +268,7 @@ export const Solutions = () => {
                 >
                   <path d="M20 6 9 17l-5-5"></path>
                 </svg>
-                Café dan lounge dalam satu area
+                Social hub dalam satu area
               </li>
               <li>
                 <svg
@@ -317,10 +315,6 @@ export const Solutions = () => {
             </button>
           </article>
         </div>
-        <p className="section-note">
-          Luas dan konfigurasi merupakan acuan dalam company profile. Kebutuhan
-          akhir mengikuti hasil survei dan perencanaan teknis.
-        </p>
       </div>
 
       {activeDialog && (
@@ -399,7 +393,7 @@ export const Solutions = () => {
                   >
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
-                  Acuan mesin fast charging 120 kW
+                  Acuan mesin fast charging ≥ 120kW
                 </li>
                 <li>
                   <svg
@@ -475,13 +469,13 @@ export const Solutions = () => {
               </div>
               <div className="dialog-spec">
                 <strong>
-                  ±900 <small>m²</small>
+                  ±300 <small>m²</small>
                 </strong>
-                <span>Min. 6 mesin · 12 nozzle</span>
+                <span>Min. 5 mesin · 10 nozzle</span>
               </div>
               <p>
-                SPKLU Center menggunakan acuan area sekitar 900 m² dengan minimal enam mesin dan dua belas nozzle.
-                Dalam skema company profile, fasilitas ini menggunakan kanopi dan mencantumkan satu mesin PSO 22 kW.
+                SPKLU Center menggunakan acuan area sekitar 300 m² dengan minimal lima mesin dan sepuluh nozzle.
+                Dalam skema company profile, fasilitas ini menggunakan kanopi dan mencantumkan satu mesin PSO 22 kW. 1 nozzle
               </p>
               <ul className="dialog-features">
                 <li>
@@ -518,7 +512,7 @@ export const Solutions = () => {
                   >
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
-                  Skema mencantumkan mesin PSO 22 kW
+                  Skema mencantumkan mesin PSO 22 kW · 1 nozzle
                 </li>
                 <li>
                   <svg
@@ -589,7 +583,7 @@ export const Solutions = () => {
                   SPKLU Signature
                 </h2>
                 <p id="radix-_R_liH2_" data-slot="dialog-description" className="text-sm text-muted-foreground">
-                  Konsep pengisian kendaraan yang terintegrasi dengan fasilitas untuk pengunjung.
+                  Konsep stasiun pengisian kendaraan yang terintegrasi dengan fasilitas untuk pengunjung.
                 </p>
               </div>
               <div className="dialog-spec">

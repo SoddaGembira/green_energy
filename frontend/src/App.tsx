@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { Hero } from './sections/Hero';
@@ -11,9 +11,56 @@ import { Projects } from './sections/Projects';
 import { PartnerBand } from './sections/PartnerBand';
 import { FAQ } from './sections/FAQ';
 import { Contact } from './sections/Contact';
+import { PrivacyPolicy } from './pages/PrivacyPolicy';
+import { navigateTo } from './utils/router';
 
 function App() {
+  const checkIsPrivacy = () => {
+    const path = window.location.pathname;
+    const hash = window.location.hash;
+    return path === '/kebijakan-privasi' || hash === '#/kebijakan-privasi' || hash === '#kebijakan-privasi';
+  };
+
+  const [currentPath, setCurrentPath] = useState(() => (checkIsPrivacy() ? '/kebijakan-privasi' : '/'));
+
   useEffect(() => {
+    const handleLocationChange = () => {
+      const isPrivacy = checkIsPrivacy();
+      const newPath = isPrivacy ? '/kebijakan-privasi' : '/';
+      setCurrentPath(newPath);
+
+      if (isPrivacy) {
+        document.title = 'Kebijakan Privasi | PT Fajar Green Energy';
+      } else {
+        document.title = 'Fajar Green Energy | Pengembangan SPKLU';
+        if (window.location.hash) {
+          const targetId = window.location.hash.replace('#', '');
+          const el = document.getElementById(targetId);
+          if (el) {
+            setTimeout(() => {
+              el.scrollIntoView({ behavior: 'smooth' });
+            }, 60);
+          }
+        }
+      }
+    };
+
+    window.addEventListener('popstate', handleLocationChange);
+    window.addEventListener('hashchange', handleLocationChange);
+
+    if (checkIsPrivacy()) {
+      document.title = 'Kebijakan Privasi | PT Fajar Green Energy';
+    }
+
+    return () => {
+      window.removeEventListener('popstate', handleLocationChange);
+      window.removeEventListener('hashchange', handleLocationChange);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (currentPath === '/kebijakan-privasi') return;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -57,23 +104,29 @@ function App() {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [currentPath]);
 
   return (
     <div className="antialiased">
       <a className="skip-link" href="#konten">Langsung ke konten</a>
-      <Navbar />
+      <Navbar currentPath={currentPath} />
       <main id="konten">
-        <Hero />
-        <IdentityStrip />
-        <About />
-        <Solutions />
-        <Signature />
-        <Process />
-        <Projects />
-        <PartnerBand />
-        <FAQ />
-        <Contact />
+        {currentPath === '/kebijakan-privasi' ? (
+          <PrivacyPolicy onBack={() => navigateTo('/')} />
+        ) : (
+          <>
+            <Hero />
+            <IdentityStrip />
+            <About />
+            <Solutions />
+            <Signature />
+            <Process />
+            <Projects />
+            <PartnerBand />
+            <FAQ />
+            <Contact />
+          </>
+        )}
       </main>
       <Footer />
     </div>

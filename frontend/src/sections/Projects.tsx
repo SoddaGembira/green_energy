@@ -126,12 +126,24 @@ export const Projects = () => {
                   <span></span>On Grid
                 </span>
                 <h3>Informasi lokasi SPKLU</h3>
-                <p>
-                  Untuk informasi lokasi dan layanan SPKLU yang beroperasi,
-                  silakan hubungi tim Fajar Green Energy.
-                </p>
-                <a className="text-link" href="#kontak">
-                  Hubungi tim kami
+                <a href="#kontak" className="button project-cta-btn">
+                  Hubungi tim Fajar Green Energy
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-arrow-right"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
                 </a>
               </div>
               <div className="project-type-label">
@@ -162,8 +174,25 @@ export const Projects = () => {
               <div className="project-empty-copy">
                 <span className="status-label status-soon"><span></span>Soon to Be</span>
                 <h3>Pengembangan lokasi berikutnya</h3>
-                <p>Informasi lokasi baru dan rencana pembukaan akan ditampilkan setelah diumumkan. Diskusikan potensi lokasi Anda bersama kami.</p>
-                <a className="text-link" href="#kontak">Usulkan lokasi Anda</a>
+                <a href="#kontak" className="button project-cta-btn">
+                  Diskusikan potensi lokasi Anda bersama kami
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-arrow-right"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </a>
               </div>
               <div className="project-type-label">FAJAR<br />GREEN ENERGY</div>
             </div>

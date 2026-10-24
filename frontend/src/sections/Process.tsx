@@ -12,76 +12,8 @@ export const Process = () => {
             </h2>
           </div>
           <p>
-            Alur penyediaan SPKLU melalui kerja sama dengan ICON+ dan
-            koordinasi jaringan PLN, sebagaimana dijelaskan dalam company
-            profile.
+            Alur penyediaan SPKLU melalui kerja sama dengan PLN Mobile dan IconGreen yang berada dalam koordinasi grup PLN
           </p>
-          <div className="ecosystem-labels">
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-building2 lucide-building-2"
-                aria-hidden="true"
-              >
-                <path d="M10 12h4"></path>
-                <path d="M10 8h4"></path>
-                <path d="M14 21v-3a2 2 0 0 0-4 0v3"></path>
-                <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path>
-                <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
-              </svg>
-              Koordinasi ICON+
-            </span>
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-network"
-                aria-hidden="true"
-              >
-                <rect x="16" y="16" width="6" height="6" rx="1"></rect>
-                <rect x="2" y="16" width="6" height="6" rx="1"></rect>
-                <rect x="9" y="2" width="6" height="6" rx="1"></rect>
-                <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
-                <path d="M12 12V8"></path>
-              </svg>
-              Jaringan PLN
-            </span>
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-monitor"
-                aria-hidden="true"
-              >
-                <rect width="20" height="14" x="2" y="3" rx="2"></rect>
-                <line x1="8" x2="16" y1="21" y2="21"></line>
-                <line x1="12" x2="12" y1="17" y2="21"></line>
-              </svg>
-              Integrasi PLN Mobile
-            </span>
-          </div>
         </div>
         <ol className="process-timeline">
           <li>
@@ -110,8 +42,7 @@ export const Process = () => {
                 <span className="stage-note">Surat peminatan</span>
                 <h3>Peminatan &amp; kebutuhan</h3>
                 <p>
-                  Penyampaian permohonan penyediaan SPKLU dari mitra atau
-                  investor kepada ICON+.
+                  Penyampaian permohonan penyediaan SPKLU dari mitra.
                 </p>
               </div>
             </div>
@@ -142,8 +73,7 @@ export const Process = () => {
                 <span className="stage-note">Evaluasi lokasi</span>
                 <h3>Survei lokasi &amp; daya</h3>
                 <p>
-                  Pemeriksaan kelayakan lokasi, kapasitas listrik, dan
-                  koordinasi teknis bersama ICON+ serta jaringan listrik UP3.
+                  Pemeriksaan kelayakan lokasi, kapasitas listrik, dan koordinasi teknis bersama IconGreen serta UP3 PLN.
                 </p>
               </div>
             </div>

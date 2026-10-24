@@ -5,37 +5,37 @@ const faqData = [
     id: 'faq-1',
     question: 'Apa perbedaan SPKLU, Center, dan Signature?',
     answer:
-      'SPKLU adalah fasilitas ringkas untuk 1 mesin. SPKLU Center merupakan fasilitas dengan beberapa titik pengisian (minimal 6 mesin). Sedangkan SPKLU Signature adalah konsep pengisian kendaraan yang terintegrasi dengan fasilitas café atau lounge.',
+      'SPKLU adalah fasilitas ringkas untuk 1 mesin. SPKLU Center merupakan fasilitas dengan beberapa titik pengisian (minimal 5 mesin). Adapun SPKLU Signature adalah konsep stasiun pengisian kendaraan yang terintegrasi dengan social hub dan fasilitas café atau lounge.',
   },
   {
     id: 'faq-2',
     question: 'Berapa luas lahan yang perlu disiapkan?',
     answer:
-      'Luas lahan bervariasi mulai dari ±50m² untuk satu mesin, hingga ±900m² untuk SPKLU Center atau Signature.',
+      'Luas lahan bervariasi mulai dari ±50m² untuk satu mesin,  ±300m² untuk SPKLU Center, hingga ±900m² untuk Signature.',
   },
   {
     id: 'faq-3',
     question: 'Bagaimana memulai pembicaraan kerja sama?',
     answer:
-      'Anda dapat memulai diskusi dengan menyampaikan permohonan penyediaan SPKLU yang berisi informasi tentang lokasi dan kebutuhan Anda melalui kontak yang tersedia.',
+      'Sampaikan lokasi yang diusulkan, perkiraan luas lahan, dan kebutuhan Anda melalui kontak Fajar Green Energy. Informasi awal tersebut menjadi bahan pembicaraan sebelum proses peminatan dan pemeriksaan lokasi.',
   },
   {
     id: 'faq-4',
-    question: 'Bagaimana hubungan proses ini dengan ICON+ dan PLN Mobile?',
+    question: 'Bagaimana hubungan proses ini dengan IconGreen dan PLN Mobile?',
     answer:
-      'Proses penyediaan melibatkan evaluasi teknis dan administratif bersama ICON+ serta pendaftaran fasilitas pada jaringan PLN Mobile.',
+      'Proses penyediaan melibatkan evaluasi teknis dan administratif bersama IconGreen serta pendaftaran fasilitas pada jaringan PLN Mobile.',
   },
   {
     id: 'faq-5',
     question: 'Apa arti On Grid dan Soon to Be pada Projects?',
     answer:
-      'On Grid adalah fasilitas SPKLU yang sudah beroperasi dan terhubung dengan jaringan listrik, sedangkan Soon to Be adalah lokasi yang sedang dalam tahap pengembangan atau perencanaan.',
+      'On Grid digunakan untuk proyek yang telah beroperasi. Soon to Be digunakan untuk proyek mendatang yang telah diumumkan. Informasi lokasi, fasilitas, dan status akan ditampilkan sesuai perkembangan masing-masing proyek.',
   },
   {
     id: 'faq-6',
     question: 'Bagaimana mendapatkan estimasi biaya pengembangan?',
     answer:
-      'Estimasi biaya bergantung pada hasil survei lokasi dan kapasitas daya. Silakan hubungi tim kami untuk konsultasi lebih lanjut.',
+      'Kebutuhan biaya bergantung pada kondisi lokasi, kapasitas listrik, konfigurasi mesin, konstruksi, dan fasilitas pendukung. Hubungi tim Fajar Green Energy dengan informasi lokasi Anda untuk membahas ruang lingkup pengembangan.',
   },
 ];
 
@@ -67,13 +67,13 @@ export const FAQ = () => {
           </p>
           <div style={{ marginTop: '1.5rem', display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
             <span style={{ fontSize: '15px', color: 'var(--body)' }}>Ada pertanyaan lain?</span>
-            <a 
+            <a
               href="#kontak"
               className="button button-small"
               style={{ margin: 0, padding: '10px 22px' }}
             >
               Hubungi kami
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
             </a>
           </div>
         </div>

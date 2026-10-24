@@ -12,7 +12,7 @@ export const Hero = () => {
           <h1 id="hero-title">
             <span>INFRASTRUKTUR SPKLU</span>
             <br />
-            UNTUK MOBILITAS LISTRIK.
+            UNTUK KENDARAAN LISTRIK
           </h1>
         </div>
         <a
@@ -85,8 +85,7 @@ export const Hero = () => {
               dan teknologi.
             </h2>
             <p>
-              Kami mengembangkan SPKLU sebagai bagian dari ekosistem energi
-              yang terhubung di Indonesia.
+              Kami mengembangkan SPKLU sebagai bagian dari <i>interconnected green energy ecosystem</i> di Indonesia.
             </p>
             <a href="#kontak" className="button button-bright">
               Diskusikan Proyek Anda
@@ -139,6 +138,7 @@ export const Hero = () => {
                   }}
                 >
                   <li style={{ display: 'flex', alignItems: 'baseline' }}>
+                    <span style={{ marginLeft: '4px', fontSize: '1.25rem' }}>≥</span>
                     <span style={{ fontSize: '2.5rem', fontWeight: 'bold', lineHeight: 1 }}>120</span>
                     <span style={{ marginLeft: '4px', fontSize: '1.25rem' }}>kW</span>
                   </li>
